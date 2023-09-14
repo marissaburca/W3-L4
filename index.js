@@ -30,10 +30,11 @@ const pulsante = function () {
     const match = () => {
       for (let i = 0; i < numeriLight.length; i++)
         if (parseInt(numeriLight[i].innerText) === pressBot) {
-         numeriLight[i].classList.add("selected");
-      }
-  };
-  match();
-})};
+          numeriLight[i].classList.add("selected");
+        }
+    };
+    match();
+  });
+};
 
 pulsante();
