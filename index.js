@@ -24,17 +24,25 @@ console.log(tabellone)
 
 
 
-const bottone = function(){
+const pulsante = function(){
     const but = document.querySelector('button')
     but.addEventListener('click', ()=>{
-    Math.floor(Math.random()*77)
-    but.classList.add('estratto')
-   
-     } )
-
-   }     
-bottone()
-console.log(generated)
+    const pressBot = Math.floor(Math.random()*77)
+    console.log(pressBot)
+    return
+    
+    })
+    const numeriLight = document.querySelectorAll('numero')
+    const match = ()=>{
+    for(let i=0; i < numeriLight.length;i++)
+    if(numeriLight[i].innerText === pressBot.innerText){
+        numeriLight[i].classList.add('selected')
+    }
+}
+match()
+    }
+        
+pulsante()
 
 
 
